@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Správce sociálního šetření</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logos">
+                <img src="img/menu.svg" alt="menu" class="logo" id="menu">
+                <img src="img/logo.svg" alt="logo" class="logo" id="main-logo">
+            </div>
+
+            <form action="#" class="search">
+                <input type="text" id="main-input" class="search__input" placeholder="Vyhledat šetření">
+                <button class="search__button" id="main-btn">
+                        <img class="search__icon" src="img/glass.svg">
+                           
+                    </img>
+                    </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__user">
+                    <img src="img/user_image.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name" id="user_email"></span>
+                </div>
+                <div class="user-nav__icon-box" id="logout">
+                    <img class="user-nav__icon" src="img/logout.svg" alt="logout">
+
+                    </img>
+                </div>
+            </nav>
+        </header>
+        <div class="messages">
+            <nav class="sidebar">
+                <div class="messages_title">
+                    <h2 class="heading-2--dark" id="site__title">Nová šetření</h2>
+                </div>
+                <ul class="side-nav" id="side-nav-msgs" data-id="ul_msgs">
+
+                </ul>
+            </nav>
+            <div class="pagination">
+                <a class="minus" id="-" href="#">-</a>
+                <a class="pageNumber" id="#" href="#">1</a>
+                <a class="plus" id="+" href="#">+</a>
+            </div>
+        </div>
+        <div class="content" id="main_content">
+
+        </div>
+        <div class="admin_box" id="a_box">
+            <nav class="sidebar">
+                <ul class="side-nav" id="side-nav-main">
+                    <li class="side-nav__item nav__item" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="newDocs">
+                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Nová šetření</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="documentCreation">
+                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Nové šetření</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="showYourDocs">
+                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Vaše šetření</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item ad" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="deleteDocument">
+                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Vše šetření</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="createGroup">
+                            <img src="img/group-menu.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Nová skupina</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="seeYourGroups">
+                            <img src="img/group-menu.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Skupiny</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item nav__item" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="history">
+                            <img src="img/history.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Historie</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item ad" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="userCreation">
+                            <img src="img/profile.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Nový uživatel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item ad" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="updateForm">
+                            <img src="img/profile.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Správa</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item nav__item" id="nav__item--id">
+                        <a href="#" class="side-nav__link" id="changePass">
+                            <img src="img/profile.svg" class="side-nav__icon" id="svg__icon">
+
+                            </img>
+                            <span id="nav__item--span">Změna hesla</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
